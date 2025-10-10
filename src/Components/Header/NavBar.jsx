@@ -3,9 +3,9 @@ import logo from '../../../src/assets/logo.png'
 
 const NavBar = () => {
     const links = <>
-    <li className='m-5'>Home</li>
-    <li className='m-5'>Apps</li>
-    <li className='m-5'>Installation</li>
+    <li className='m-2 lg:m-5'>Home</li>
+    <li className='m-2 lg:m-5'>Apps</li>
+    <li className='m-2 lg:m-5'>Installation</li>
     </>
     return (
         <div className='bg-base-100'>
