@@ -6,6 +6,7 @@ import reviewImg from '../../assets/icon-review.png'
 import Ratings from '../Ratings/Ratings';
 import axios from 'axios';
 
+// export const installContext = createContext('');
 const AppsDetails = () => {
     const getRatings = axios.get('data.json')
     const { id } = useParams();
