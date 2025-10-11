@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import notFound from '../../assets/error-404.png'
 
 const Installation = () => {
     const [install, setInstall] = useState([])
@@ -41,7 +42,7 @@ const Installation = () => {
 
 
     return (
-        <div className='space-y-6'>
+        <div className='space-y-6 max-w-[1440px] mx-auto'>
             <div>
                 <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
@@ -60,15 +61,23 @@ const Installation = () => {
 
 
             <div>
+                {(install.length === 0) ? 
+
+                    (
+          <div className='flex flex-col items-center justify-center mt-10'>
+            <img src={notFound} alt='No apps found' className='my-20' />
+            <p className='text-gray-500 text-lg mb-10'>No installed apps found!</p>
+          </div>
+        ) :
                 <div>
                     {
                         sortedItem().map(p=>
 
                 <div
                         
-                        className='flex items-center justify-between border-b border-dotted border-blue-300 py-4'
+                        className='flex flex-col md:flex-row gap-10 items-center justify-between border-b border-dotted border-blue-300 py-4'
                     >
-                        <div className='flex items-center'>
+                        <div className='flex flex-col md:flex-row items-center'>
                             <img src={p.image} alt={p.title} className='w-30 h-30 mr-4 rounded' />
                             <div>
                                 <h3 className='font-medium'>{p.title}</h3>
@@ -84,6 +93,10 @@ const Installation = () => {
                         )
                     }
                 </div>
+
+                
+            }
+                
             </div>
 
             
