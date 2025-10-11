@@ -6,12 +6,12 @@ const Apps = () => {
     console.log(allData)
 
     return (
-            <NavLink to={`/appsDetails/${allData.id}`}> 
         <div>
             <div className="max-w-[1440px] mx-auto">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
             {
                 allData.map(appData=>
+                  <NavLink to={`/appsDetails/${appData.id}`}>
                      <div className="max-w-[1440px] mx-auto">
             <div className="max-w-[1440px] mx-auto ">
       <div className="card bg-base-10 shadow-sm">
@@ -28,14 +28,13 @@ const Apps = () => {
       </div>
     </div>
         </div>
-                    
+                    </NavLink>
                 )
             }
            
         </div>
             </div>
         </div>
-         </NavLink>
         
         
         

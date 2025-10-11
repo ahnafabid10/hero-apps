@@ -12,9 +12,7 @@ const TrendingPages = ({trendingApps}) => {
     const appShow = showAll ? sortedApps : sortedApps.slice(0, only8)
 
     return (
-        
             <div>
-            
             <div className='text-center p-3'>
                 <h1 className='text-4xl font-bold text-black'>Trending Apps</h1>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
