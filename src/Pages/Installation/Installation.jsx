@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import notFound from '../../assets/error-404.png'
+import { FaDownload } from "react-icons/fa6";
+import { FaStarHalfAlt } from "react-icons/fa";
+
 
 const Installation = () => {
     const [install, setInstall] = useState([])
@@ -28,6 +31,7 @@ const Installation = () => {
     const handleRemove = (id)=>{
         const existingList = JSON.parse(localStorage.getItem('Installed'))
          let updateList = existingList.filter(p=> p.id !== id)
+         alert('Successfully Uninstalled')
 
         // Ui Instant Update
         // setInstall.apply(prev => prev.filter(p=> p.id !== id))
@@ -43,7 +47,7 @@ const Installation = () => {
 
     return (
         <div className='space-y-6 max-w-[1440px] mx-auto'>
-            <div>
+            <div className='text-center p-10 space-y-5'>
                 <h1 className='text-4xl font-bold'>Your Installed Apps</h1>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
             </div>
@@ -75,16 +79,16 @@ const Installation = () => {
 
                 <div
                         
-                        className='flex flex-col md:flex-row gap-10 items-center justify-between border-b border-dotted border-blue-300 py-4'
+                        className='flex flex-col md:flex-row gap-10 items-center justify-between border-b border-dotted border-blue-300 py-4 md:mb-100'
                     >
                         <div className='flex flex-col md:flex-row items-center'>
                             <img src={p.image} alt={p.title} className='w-30 h-30 mr-4 rounded' />
                             <div>
                                 <h3 className='font-medium'>{p.title}</h3>
-                                <div className='flex text-gray-600 text-sm'>
-                                    <p className='mr-4'>{p.downloads}</p>
-                                    <p className='mr-4'>{p.ratingAvg}</p>
-                                    <p>{p.size}</p>
+                                <div className='flex text-gray-600 text-sm gap-4 items-center'>
+                                    <p className='mr-4 text-[#00D390] flex gap-1 items-center'><FaDownload />{p.downloads}</p>
+                                    <p className='mr-4 text-[#FF8811] flex gap-1 items-center'><FaStarHalfAlt />{p.ratingAvg}</p>
+                                    <p className='mr-4 text-[#627382] flex gap-1 items-center'>{p.size}MB</p>
                                 </div>
                             </div>
                         </div>

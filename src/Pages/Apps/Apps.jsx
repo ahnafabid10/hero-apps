@@ -1,5 +1,8 @@
 import React, { Suspense, useState } from 'react';
 import { NavLink, useLoaderData } from 'react-router';
+import { FaDownload } from "react-icons/fa6";
+import { FaStarHalfAlt } from "react-icons/fa";
+
 
 const Apps = () => {
     const allData = useLoaderData();
@@ -16,7 +19,7 @@ const Apps = () => {
         <div>
             <div className="max-w-[1440px] mx-auto">
   <div className='text-center py-10'>
-                <h1 className='text-4xl text-black font-bold'>Our All Applications</h1>
+                <h1 className='text-4xl text-black font-bold mb-5'>Our All Applications</h1>
   <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>
               </div>
 
@@ -62,10 +65,10 @@ const Apps = () => {
          />
           </figure>
     <div className="card-body">
-                <h2 className="card-title justify-center">{appData.title}</h2>
+                <h2 className="card-title justify-center mb-5">{appData.title}</h2>
           <div className="card-actions justify-between">
-         <div className="badge badge-outline">{appData.downloads}</div>
-            <div className="badge badge-outline">{appData.ratingAvg}</div>
+        <div className="badge badge-outline text-[#00D390] p-5"><FaDownload />{appData.downloads}</div>
+        <div className="badge badge-outline text-[#FF8811] p-5"><FaStarHalfAlt />{appData.ratingAvg}</div>
           </div>
              </div>
             </div>

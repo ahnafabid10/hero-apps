@@ -3,6 +3,7 @@ import TrendingPage from '../TrendingPage/TrendingPage';
 import logo from "../../assets/logo.png"
 import { NavLink } from 'react-router';
 
+
 const TrendingPages = ({trendingApps}) => {
     const [showAll, SetShowAll] = useState(false)
     const only8 = 8;
@@ -13,8 +14,8 @@ const TrendingPages = ({trendingApps}) => {
 
     return (
             <div>
-            <div className='text-center p-3'>
-                <h1 className='text-4xl font-bold text-black'>Trending Apps</h1>
+            <div className='text-center p-10'>
+                <h1 className='text-4xl font-bold text-black mb-3'>Trending Apps</h1>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
             </div>
 

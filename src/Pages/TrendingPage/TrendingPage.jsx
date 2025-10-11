@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaDownload } from "react-icons/fa6";
+import { FaStarHalfAlt } from "react-icons/fa";
 
 const TrendingPage = ({singleApp}) => {
     console.log(singleApp)
@@ -13,8 +15,8 @@ const TrendingPage = ({singleApp}) => {
         <div className="card-body">
           <h2 className="card-title justify-center">{title}</h2>
           <div className="card-actions justify-between">
-            <div className="badge badge-outline">{downloads}</div>
-            <div className="badge badge-outline">{ratingAvg}</div>
+            <div className="badge badge-outline text-[#00D390] p-5"><FaDownload />{downloads}</div>
+            <div className="badge badge-outline text-[#FF8811] p-5"><FaStarHalfAlt />{ratingAvg}</div>
           </div>
         </div>
       </div>

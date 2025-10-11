@@ -5,6 +5,7 @@ import ratingImg from '../../assets/icon-ratings.png'
 import reviewImg from '../../assets/icon-review.png'
 import {BarChart,Bar,CartesianGrid,Legend,ResponsiveContainer,Tooltip,XAxis,YAxis,} from 'recharts';
 
+
 // export const installContext = createContext('');
 const AppsDetails = () => {
     const { id } = useParams();
