@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import notFound from '../../assets/error-404.png'
 import { FaDownload } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Installation = () => {
@@ -31,7 +32,7 @@ const Installation = () => {
     const handleRemove = (id)=>{
         const existingList = JSON.parse(localStorage.getItem('Installed'))
          let updateList = existingList.filter(p=> p.id !== id)
-         alert('Successfully Uninstalled')
+         toast('Successfully Uninstalled')
 
         // Ui Instant Update
         // setInstall.apply(prev => prev.filter(p=> p.id !== id))
@@ -104,7 +105,7 @@ const Installation = () => {
             </div>
 
             
-            
+            <ToastContainer />
         </div>
     );
 };

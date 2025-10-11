@@ -4,6 +4,7 @@ import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 import reviewImg from '../../assets/icon-review.png'
 import {BarChart,Bar,CartesianGrid,Legend,ResponsiveContainer,Tooltip,XAxis,YAxis,} from 'recharts';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 // export const installContext = createContext('');
@@ -24,13 +25,13 @@ const AppsDetails = () => {
 
 
     const handleClickInstall= () =>{
-        alert(`${singleApps.title} installed successfully!`)
+        toast(`${singleApps.title} installed successfully!`)
         setInstalled(true)
         const existingList = JSON.parse(localStorage.getItem('Installed'))
         let updateList = []
         if(existingList){
             const isDuplicated = existingList.some(p=>p.id === singleApps.id)
-            if(isDuplicated) return alert ('already Installed')
+            if(isDuplicated) return toast ('already Installed')
             updateList =[...existingList, singleApps ]
         }
         else{
@@ -121,6 +122,7 @@ const AppsDetails = () => {
 
             </div>
         </div>
+        <ToastContainer />
         </div>
         
     );
