@@ -12,6 +12,7 @@ const AppsDetails = () => {
     const appsData = useLoaderData();
     const singleApps = appsData.find(apps => apps.id === appsId)
     const [installed, setInstalled] = useState(false)
+    
 
 
     const handleClickInstall= () =>{

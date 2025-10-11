@@ -9,6 +9,7 @@ const Installation = () => {
     }, [])
 
 
+
     const sortedItem = () =>{
         if(sortOrder === 'price-asc'){
             return [...install].sort((a,b)=> a.size-b.size)

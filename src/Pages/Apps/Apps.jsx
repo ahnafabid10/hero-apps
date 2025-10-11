@@ -15,14 +15,14 @@ const Apps = () => {
     return (
         <div>
             <div className="max-w-[1440px] mx-auto">
-              <div className='text-center py-10'>
+  <div className='text-center py-10'>
                 <h1 className='text-4xl text-black font-bold'>Our All Applications</h1>
-                <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>
+  <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>
               </div>
 
-              <div className='flex justify-between py-10'>
-              <div>
-                <h3 className='text-2xl'>({searchProducts.length})Apps Found</h3>
+<div className='flex justify-between py-10'>
+   <div>
+                <h3 className='text-'>({searchProducts.length})Apps Found</h3>
               </div>
 
               {/* search  option */}
@@ -49,30 +49,36 @@ const Apps = () => {
 
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
-            {
-                searchProducts.map(appData=>
-                  <NavLink to={`/appsDetails/${appData.id}`}>
-                     <div className="max-w-[1440px] mx-auto">
-            <div className="max-w-[1440px] mx-auto ">
-      <div className="card bg-base-10 shadow-sm">
-        <figure>
-          <img className='max-w-[300px] md:w-full h-[300px] rounded-4xl' src={appData.image} alt={appData.title} />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title justify-center">{appData.title}</h2>
+            {searchProducts.length > 0 ? (
+                        searchProducts.map(appData => (
+               <NavLink key={appData.id} to={`/appsDetails/${appData.id}`}>
+ <div className="max-w-[1440px] mx-auto">
+    <div className="card bg-base-10 shadow-sm">
+             <figure>
+                        <img
+                           className='max-w-[300px] md:w-full h-[300px] rounded-4xl'
+                       src={appData.image}
+                     alt={appData.title}
+         />
+          </figure>
+    <div className="card-body">
+                <h2 className="card-title justify-center">{appData.title}</h2>
           <div className="card-actions justify-between">
-            <div className="badge badge-outline">{appData.downloads}</div>
+         <div className="badge badge-outline">{appData.downloads}</div>
             <div className="badge badge-outline">{appData.ratingAvg}</div>
           </div>
-        </div>
-      </div>
-    </div>
-        </div>
-                    </NavLink>
-                )
-            }
+             </div>
+            </div>
+          </div>
+             </NavLink>
+                        ))
+                    ) : (
+                        <div className="col-span-full text-center py-10">
+                            <p className="text-xl font-semibold text-gray-500">No apps found</p>
+                        </div>
+                    )}
            
-        </div>
+            </div>
             </div>
         </div>
         
