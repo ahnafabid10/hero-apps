@@ -12,7 +12,9 @@ const TrendingPages = ({trendingApps}) => {
     const appShow = showAll ? sortedApps : sortedApps.slice(0, only8)
 
     return (
-        <div>
+        
+            <div>
+            
             <div className='text-center p-3'>
                 <h1 className='text-4xl font-bold text-black'>Trending Apps</h1>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
@@ -21,9 +23,11 @@ const TrendingPages = ({trendingApps}) => {
             <div className="max-w-[1440px] mx-auto">
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
                 <Suspense fallback={<span className='text-2xl text-center'>L{logo}ading...</span>}>
-                {
-                    appShow.map(singleApp=><TrendingPage singleApp={singleApp}></TrendingPage>)
-                }
+                {appShow.map(singleApp => (
+            <NavLink key={singleApp.id} to={`/appsDetails/${singleApp.id}`}>
+              <TrendingPage singleApp={singleApp} />
+            </NavLink>
+          ))}
                 </Suspense>
                 </div>
             </div>
@@ -36,6 +40,7 @@ const TrendingPages = ({trendingApps}) => {
            
             
         </div>
+        
     );
 };
 

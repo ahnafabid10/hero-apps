@@ -1,11 +1,12 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, { Suspense } from 'react';
+import { NavLink, useLoaderData } from 'react-router';
 
 const Apps = () => {
     const allData = useLoaderData();
     console.log(allData)
 
     return (
+            <NavLink to={`/appsDetails/${allData.id}`}> 
         <div>
             <div className="max-w-[1440px] mx-auto">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
@@ -34,6 +35,9 @@ const Apps = () => {
         </div>
             </div>
         </div>
+         </NavLink>
+        
+        
         
         
     );
