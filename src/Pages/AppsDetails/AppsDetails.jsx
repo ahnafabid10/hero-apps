@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
@@ -12,6 +12,13 @@ const AppsDetails = () => {
     const appsData = useLoaderData();
     const singleApps = appsData.find(apps => apps.id === appsId)
     const [installed, setInstalled] = useState(false)
+
+    useEffect(() => {
+    const existingList = JSON.parse(localStorage.getItem('Installed'));
+    if (existingList && existingList.some(p => p.id === singleApps.id)) {
+      setInstalled(true);
+    }
+  }, [singleApps.id]);
     
 
 
@@ -67,8 +74,9 @@ const AppsDetails = () => {
 
             {/* install */}
             <div>
-                <button onClick={handleClickInstall} disabled={installed} className='btn justify-center items-center bg-[#00D390]'>
-                    Install Now (${singleApps.size}MB)
+                <button onClick={handleClickInstall} disabled={installed}
+                className={`btn justify-center items-center ${installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'}`}>
+                    {installed ? 'Installed' : `Install Now (${singleApps.size}MB)`}
                 </button>
             </div>
 
