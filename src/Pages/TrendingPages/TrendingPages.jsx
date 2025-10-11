@@ -1,8 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState, } from 'react';
 import TrendingPage from '../TrendingPage/TrendingPage';
 import logo from "../../assets/logo.png"
 
 const TrendingPages = ({trendingApps}) => {
+    const [showAll, SetShowAll] = useState(false)
+    const only8 = 8;
+
+    const sortedApps = [...trendingApps].sort((a,b)=>b.downloads - a.downloads)
+
+    const appShow = showAll ? sortedApps : sortedApps.slice(0, only8)
+
     return (
         <div>
             <div className='text-center p-3'>
@@ -14,7 +21,7 @@ const TrendingPages = ({trendingApps}) => {
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
                 <Suspense fallback={<span className='text-2xl text-center'>{logo}Loading...</span>}>
                 {
-                    trendingApps.map(singleApp=><TrendingPage singleApp={singleApp}></TrendingPage>)
+                    appShow.map(singleApp=><TrendingPage singleApp={singleApp}></TrendingPage>)
                 }
                 </Suspense>
                 </div>

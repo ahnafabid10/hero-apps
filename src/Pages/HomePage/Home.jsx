@@ -6,6 +6,7 @@ import TrendingPages from '../TrendingPages/TrendingPages';
 
 const Home = () => {
     const trendingApps = useLoaderData()
+    
     return (
         <div>
             <Banner></Banner>
