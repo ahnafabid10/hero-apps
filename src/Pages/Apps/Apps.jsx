@@ -2,6 +2,7 @@ import React, { Suspense, useState } from 'react';
 import { NavLink, useLoaderData } from 'react-router';
 import { FaDownload } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
+import notFound from '../../assets/error-404.png'
 
 
 const Apps = () => {
@@ -76,7 +77,8 @@ const Apps = () => {
              </NavLink>
                         ))
                     ) : (
-                        <div className="col-span-full text-center py-10">
+                        <div className="col-span-full flex flex-col space-y-7 justify-center items-center text-center py-15">
+                          <img src={notFound} alt="" />
                             <p className="text-xl font-semibold text-gray-500">No apps found</p>
                         </div>
                     )}
