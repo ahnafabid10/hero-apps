@@ -23,8 +23,9 @@ const NavBar = () => {
         {links}
       </ul>
     </div>
-    <img className='w-[40px] h-[40px]' src={logo} alt="" />
-    <h1 className='text-[#632EE3] font-bold ml-3 cursor-pointer'>HERO.IO</h1>
+    
+      <NavLink to={"/"}><img className='w-[40px] h-[40px] cursor-pointer' src={logo} alt="" /> </NavLink>
+      <NavLink to={"/"}><h1 className='text-[#632EE3] font-bold ml-3 cursor-pointer'>HERO.IO</h1></NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

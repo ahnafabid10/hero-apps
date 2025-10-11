@@ -26,6 +26,10 @@ export const router = createBrowserRouter([
       path: '/installation',
       Component: Apps,
     },
+    {
+      path:"*" ,
+      Component: ErrorPage
+    }
   
   
   
