@@ -3,12 +3,10 @@ import { useLoaderData, useParams } from 'react-router';
 import downloadImg from '../../assets/icon-downloads.png'
 import ratingImg from '../../assets/icon-ratings.png'
 import reviewImg from '../../assets/icon-review.png'
-import Ratings from '../Ratings/Ratings';
-import axios from 'axios';
+import {BarChart,Bar,CartesianGrid,Legend,ResponsiveContainer,Tooltip,XAxis,YAxis,} from 'recharts';
 
 // export const installContext = createContext('');
 const AppsDetails = () => {
-    const getRatings = axios.get('data.json')
     const { id } = useParams();
     const appsId = parseInt(id);
     const appsData = useLoaderData();
@@ -73,9 +71,25 @@ const AppsDetails = () => {
             <h1>Ratings</h1>
             <div>
 
-        <Suspense fallback={<span>Loading....</span>}>
-            <Ratings getRatings={getRatings}></Ratings>
-        </Suspense>
+
+    <div className='max-w-[800px] mx-auto my-10'>
+        <h1 className='text-2xl font-semibold mb-5 text-center'>Ratings</h1>
+        <ResponsiveContainer width='100%' height={300}>
+          <BarChart
+            data={singleApps.ratings}
+            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray='3 3' />
+            <XAxis dataKey='name' />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey='count' fill='#632EE3' />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+
+        
 
 
             </div>
