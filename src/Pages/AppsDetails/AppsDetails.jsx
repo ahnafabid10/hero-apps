@@ -55,7 +55,7 @@ const AppsDetails = () => {
 
             {/* install */}
             <div>
-                <button onClick={handleClickInstall} disabled={installed} className='btn bg-[#00D390]'>
+                <button onClick={handleClickInstall} disabled={installed} className='btn justify-center items-center bg-[#00D390]'>
                     Install Now (${singleApps.size}MB)
                 </button>
             </div>
@@ -68,7 +68,6 @@ const AppsDetails = () => {
         </div>
 
         <div>
-            <h1>Ratings</h1>
             <div>
 
 
@@ -89,6 +88,13 @@ const AppsDetails = () => {
         </ResponsiveContainer>
       </div>
 
+        <div className='border-t-1'>
+            <div className='max-w-[1440px] mx-auto p-5'>
+            <p className='text-xl font-bold mt-8'>Description</p>
+            <p className='mb-8'>{singleApps.description}</p>
+            </div>
+            
+        </div>
         
 
 
