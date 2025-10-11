@@ -14,21 +14,18 @@ const AppsDetails = () => {
     const [installed, setInstalled] = useState(false)
 
 
-
-
     const handleClickInstall= () =>{
         alert(`${singleApps.title} installed successfully!`)
         setInstalled(true)
-
-        const existingList = JSON.parse(localStorage.getItem('Installed')) || []
+        const existingList = JSON.parse(localStorage.getItem('Installed'))
         let updateList = []
-        const isAlreadyInstalled = existingList.some(app => app.id === singleApps.id);
-
-        if(!isAlreadyInstalled){
-            updateList =[...existingList, singleApps]
+        if(existingList){
+            const isDuplicated = existingList.some(p=>p.id === singleApps.id)
+            if(isDuplicated) return alert ('already Installed')
+            updateList =[...existingList, singleApps ]
         }
         else{
-            updateList.push(installed)
+            updateList.push(singleApps)
         }
         localStorage.setItem('Installed', JSON.stringify(updateList))
     }

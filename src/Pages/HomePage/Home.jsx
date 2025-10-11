@@ -5,20 +5,9 @@ import TrendingPages from '../TrendingPages/TrendingPages';
 
 const Home = () => {
     const [trendingApps, setTrendingApps] = useState([])
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => {
-                const installedApps = JSON.parse(localStorage.getItem('Installed')) || [];
-
-                const dataApps = data.map(app => {
-                    const isInstalled = installedApps.some(a => a.id === app.id);
-                    return { ...app, installed: isInstalled };
-                });
-
-                setTrendingApps(dataApps);
-            });
-    }, []);
+    useEffect(()=>{
+        fetch('data.json').then(res=>res.json()).then(data=>setTrendingApps(data))
+    }, [])
     // const trendingApps = useLoaderData()
 
     return (
