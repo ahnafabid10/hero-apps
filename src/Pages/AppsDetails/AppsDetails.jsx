@@ -14,9 +14,23 @@ const AppsDetails = () => {
     const [installed, setInstalled] = useState(false)
 
 
+
+
     const handleClickInstall= () =>{
         alert(`${singleApps.title} installed successfully!`)
         setInstalled(true)
+
+        const existingList = JSON.parse(localStorage.getItem('Installed')) || []
+        let updateList = []
+        const isAlreadyInstalled = existingList.some(app => app.id === singleApps.id);
+
+        if(!isAlreadyInstalled){
+            updateList =[...existingList, singleApps]
+        }
+        else{
+            updateList.push(installed)
+        }
+        localStorage.setItem('Installed', JSON.stringify(updateList))
     }
 
     return (
