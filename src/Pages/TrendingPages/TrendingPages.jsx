@@ -1,6 +1,7 @@
 import React, { Suspense, useState, } from 'react';
 import TrendingPage from '../TrendingPage/TrendingPage';
 import logo from "../../assets/logo.png"
+import { NavLink } from 'react-router';
 
 const TrendingPages = ({trendingApps}) => {
     const [showAll, SetShowAll] = useState(false)
@@ -17,15 +18,21 @@ const TrendingPages = ({trendingApps}) => {
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
             </div>
 
-            <div className="max-w-[1440px] mx-auto borer-2">
+            <div className="max-w-[1440px] mx-auto">
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
-                <Suspense fallback={<span className='text-2xl text-center'>{logo}Loading...</span>}>
+                <Suspense fallback={<span className='text-2xl text-center'>L{logo}ading...</span>}>
                 {
                     appShow.map(singleApp=><TrendingPage singleApp={singleApp}></TrendingPage>)
                 }
                 </Suspense>
                 </div>
             </div>
+           <div className='text-center'>
+            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+                <NavLink to={"/apps"}><li className=' m-2 lg:m-5 btn text-white bg-gradient-to-l from-[#9F62F2] to-[#632EE3]' >Show All</li></NavLink>
+            </Suspense>
+                
+           </div>
            
             
         </div>
