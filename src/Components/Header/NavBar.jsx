@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../../src/assets/logo.png'
 import { NavLink } from 'react-router';
+import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
     const links = <>
-    <NavLink to={"/apps"}><li className='m-2 lg:m-5'>Home</li></NavLink>
-    <NavLink><li className='m-2 lg:m-5'>Apps</li></NavLink>
-    <NavLink><li className='m-2 lg:m-5'>Installation</li></NavLink>
+    <NavLink to={"/"}><li className='m-2 lg:m-5'>Home</li></NavLink>
+    <NavLink to={"/apps"}><li className='m-2 lg:m-5'>Apps</li></NavLink>
+    <NavLink to={"/installation"}><li className='m-2 lg:m-5'>Installation</li></NavLink>
     </>
     return (
         <div className='bg-base-100'>
@@ -23,6 +24,7 @@ const NavBar = () => {
       </ul>
     </div>
     <img className='w-[40px] h-[40px]' src={logo} alt="" />
+    <h1 className='text-[#632EE3] font-bold ml-3 cursor-pointer'>HERO.IO</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -30,7 +32,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Contribute</a>
+    <a className="btn" href="https://github.com/ahnafabid10"><FaGithub />Contribute</a>
   </div>
 </div>
         </div>

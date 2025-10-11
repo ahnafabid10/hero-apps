@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://ibb.co.com/N6dS72RW",
+    "title": "TaskMaster Pro",
+    "companyName": "NextGen Labs",
+    "id": 1,
+    "description": "A productivity app designed to help you manage projects, set reminders, and boost daily efficiency.",
+    "size": 48,
+    "reviews": 3200,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 780 },
+      { "name": "5 star", "count": 1760 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/wNGbZpWq",
+    "title": "PhotoTune Studio",
+    "companyName": "PixelCraft Ltd.",
+    "id": 2,
+    "description": "Edit photos like a pro with advanced filters, background removers, and AI enhancement tools.",
+    "size": 82,
+    "reviews": 5400,
+    "ratingAvg": 4.8,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3540 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/NdrhPGL0",
+    "title": "FitTrack",
+    "companyName": "ActiveSync Health",
+    "id": 3,
+    "description": "Track workouts, monitor heart rate, and set fitness goals with this all-in-one health app.",
+    "size": 59,
+    "reviews": 2300,
+    "ratingAvg": 4.4,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 670 },
+      { "name": "5 star", "count": 950 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/Fk4tTJDJ",
+    "title": "MusicFlow",
+    "companyName": "SoundWave Media",
+    "id": 4,
+    "description": "Stream and download your favorite songs, create playlists, and enjoy curated music recommendations.",
+    "size": 94,
+    "reviews": 8700,
+    "ratingAvg": 4.7,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 5520 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/V0PzC5CJ",
+    "title": "BudgetBuddy",
+    "companyName": "FinPro Solutions",
+    "id": 5,
+    "description": "Take control of your finances with easy expense tracking, savings goals, and smart budget planning.",
+    "size": 41,
+    "reviews": 1200,
+    "ratingAvg": 4.3,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 370 },
+      { "name": "5 star", "count": 410 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/jPpgYhvg",
+    "title": "LangEase",
+    "companyName": "PolyLingua Inc.",
+    "id": 6,
+    "description": "Learn over 25 languages with interactive lessons, speech recognition, and real-life practice dialogues.",
+    "size": 67,
+    "reviews": 4700,
+    "ratingAvg": 4.9,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3190 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/6cQQKShF",
+    "title": "TravelMate",
+    "companyName": "GlobeTrek Apps",
+    "id": 7,
+    "description": "Plan your trips, find local attractions, and track travel expenses effortlessly with TravelMate.",
+    "size": 53,
+    "reviews": 3100,
+    "ratingAvg": 4.5,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 390 },
+      { "name": "4 star", "count": 820 },
+      { "name": "5 star", "count": 1560 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/GvHf1nS7",
+    "title": "MindSpace",
+    "companyName": "ZenWorks Studio",
+    "id": 8,
+    "description": "Improve your mental well-being with guided meditations, mood tracking, and mindfulness exercises.",
+    "size": 46,
+    "reviews": 2600,
+    "ratingAvg": 4.7,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 680 },
+      { "name": "5 star", "count": 1420 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/qM0yNmGL",
+    "title": "NoteSync",
+    "companyName": "CloudSync Labs",
+    "id": 9,
+    "description": "A minimal yet powerful note-taking app that syncs seamlessly across all your devices.",
+    "size": 29,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 640 },
+      { "name": "5 star", "count": 930 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/8DzRSnr0",
+    "title": "ChefPal",
+    "companyName": "HomeTaste Co.",
+    "id": 10,
+    "description": "Discover thousands of easy recipes, meal planners, and grocery lists all in one place.",
+    "size": 61,
+    "reviews": 4500,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 330 },
+      { "name": "4 star", "count": 920 },
+      { "name": "5 star", "count": 2980 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/fVYKYD1R",
+    "title": "StudyMate",
+    "companyName": "EduSmart",
+    "id": 11,
+    "description": "Organize your study schedule, flashcards, and group sessions for better academic performance.",
+    "size": 55,
+    "reviews": 3800,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 950 },
+      { "name": "5 star", "count": 2080 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/9mBFCYWc",
+    "title": "SleepWell",
+    "companyName": "DreamLab",
+    "id": 12,
+    "description": "Fall asleep faster with calming sounds, bedtime stories, and sleep cycle tracking tools.",
+    "size": 43,
+    "reviews": 2700,
+    "ratingAvg": 4.7,
+    "downloads": 790000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 740 },
+      { "name": "5 star", "count": 1480 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/TDkSLx4c",
+    "title": "CryptoTrack",
+    "companyName": "FinChain Tech",
+    "id": 13,
+    "description": "Track crypto prices, portfolios, and market trends with real-time updates and alerts.",
+    "size": 70,
+    "reviews": 5200,
+    "ratingAvg": 4.6,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 580 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 2760 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/5XMjzMzx",
+    "title": "PlantCare",
+    "companyName": "GreenRoot Apps",
+    "id": 14,
+    "description": "Identify plants, get watering reminders, and tips to keep your garden healthy and happy.",
+    "size": 39,
+    "reviews": 1900,
+    "ratingAvg": 4.5,
+    "downloads": 580000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 630 },
+      { "name": "5 star", "count": 820 }
+    ]
+  },
+  {
+    "image": "https://ibb.co.com/PZHCt0tS",
+    "title": "TimeZone Pro",
+    "companyName": "WorldClock Inc.",
+    "id": 15,
+    "description": "Keep track of world time zones, plan meetings, and schedule global events effortlessly.",
+    "size": 32,
+    "reviews": 900,
+    "ratingAvg": 4.4,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 360 }
+    ]
+  }
+]
