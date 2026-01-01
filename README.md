@@ -119,3 +119,31 @@ It uses React Router for client-side navigation, localStorage for persistence, a
 - Supports route refresh without 404
 
 - Optimized production build
+
+## Installation
+  ```bash
+  # Clone the repository
+git clone https://github.com/ahnafabid10/hero-apps.git
+
+# Navigate into the project directory
+cd hero-apps
+
+# Install dependencies
+npm install
+
+# Create a `.env` file in the root directory
+# Add your Firebase
+VITE_apiKey=your_api_key
+VITE_authDomain=your_auth_domain
+VITE_projectId=your_project_id
+VITE_storageBucket=your_storageBucket
+VITE_messagingSenderId= your_messagingSenderId
+VITE_appId= your_appId
+
+# Run the development server
+npm run dev
+
+# Build and preview production version
+npm run build
+npm run preview
+```
