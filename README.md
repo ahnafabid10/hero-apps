@@ -94,14 +94,6 @@ Hero IO reflects how real SaaS platforms are built. It includes:
 
 It uses React Router for client-side navigation, localStorage for persistence, and Recharts for data visualization.
 
-## 🚀 Deployment
-
-- Deployed on Netlify / Vercel / Cloudflare
-
-- Supports route refresh without 404
-
-- Optimized production build
-
 ## 🛠 Technologies Used
 
 - React 19
@@ -117,5 +109,13 @@ It uses React Router for client-side navigation, localStorage for persistence, a
 - Axios
 
 - React Toastify
+
+## 🚀 Deployment
+
+- Deployed on Netlify / Vercel / Cloudflare
+
+- Supports route refresh without 404
+
+- Optimized production build
 
 - Vite
