@@ -110,6 +110,8 @@ It uses React Router for client-side navigation, localStorage for persistence, a
 
 - React Toastify
 
+- Vite
+- 
 ## 🚀 Deployment
 
 - Deployed on Netlify / Vercel / Cloudflare
@@ -117,5 +119,3 @@ It uses React Router for client-side navigation, localStorage for persistence, a
 - Supports route refresh without 404
 
 - Optimized production build
-
-- Vite
